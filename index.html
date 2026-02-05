@@ -4,34 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TGMStream – Telegram Video Streaming APK</title>
-    <meta name="description" content="TGMStream APK for Android. Stream Telegram videos fast, easily, and safely. Download free TGMStream APK now!">
-    <meta name="keywords" content="TGMStream APK, Telegram video streaming app, stream Telegram videos Android, Telegram media player, free APK download">
+    <meta name="description" content="TGMStream APK for Android. Stream Telegram videos smoothly and easily. Fast, secure, and free download!">
+    <meta name="keywords" content="TGMStream APK, Telegram video streaming, Android APK, stream Telegram videos, free APK download">
     <meta name="author" content="TGMStream Team">
     <meta name="robots" content="index, follow">
-
-    <!-- Open Graph for social sharing -->
-    <meta property="og:title" content="TGMStream – Telegram Video Streaming App">
-    <meta property="og:description" content="Stream Telegram videos easily with TGMStream. Download the latest Android APK now.">
-    <meta property="og:type" content="website">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
-        /* General Body */
         body {
             margin: 0;
-            padding: 0;
             font-family: 'Roboto', sans-serif;
-            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            background: linear-gradient(to right, #4facfe, #00f2fe);
             color: #fff;
-            text-align: center;
         }
 
-        /* Container Box */
+        /* Header */
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 15px;
+            color: #e0f7ff;
+        }
+
+        /* App Container */
         .container {
-            max-width: 600px;
-            margin: 80px auto;
+            max-width: 800px;
+            margin: auto;
             background: rgba(255, 255, 255, 0.1);
             padding: 40px;
             border-radius: 20px;
@@ -39,77 +49,131 @@
             backdrop-filter: blur(10px);
         }
 
-        /* Heading */
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #fff;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        /* App Logo Placeholder */
+        .logo {
+            width: 120px;
+            height: 120px;
+            background: #ff416c;
+            background: linear-gradient(to right, #ff4b2b, #ff416c);
+            border-radius: 30px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
         }
 
         /* Description */
-        p {
+        .container p {
             font-size: 1.1em;
             line-height: 1.6em;
             color: #e0f7ff;
+            margin-bottom: 30px;
         }
 
         /* Download Button */
         .download-btn {
             display: inline-block;
-            margin-top: 30px;
-            padding: 18px 35px;
+            padding: 18px 40px;
             font-size: 1.2em;
             color: #fff;
-            background: #ff416c;
             background: linear-gradient(to right, #ff4b2b, #ff416c);
-            border: none;
             border-radius: 50px;
-            text-decoration: none;
             font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
             transition: all 0.3s ease;
         }
+
         .download-btn:hover {
             transform: scale(1.05);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .feature {
+            width: 45%;
+            background: rgba(255,255,255,0.15);
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .feature h3 {
+            margin-top: 0;
+            color: #fff;
+        }
+
+        .feature p {
+            color: #d0f0ff;
         }
 
         /* Note */
         .note {
-            margin-top: 25px;
+            margin-top: 30px;
             font-size: 0.9em;
             color: #ccefff;
         }
 
         /* Footer */
         footer {
-            margin-top: 50px;
+            text-align: center;
+            padding: 20px;
             font-size: 0.8em;
             color: #ccefff;
         }
 
         /* Responsive */
-        @media(max-width: 480px) {
-            .container {
-                padding: 25px;
-                margin: 40px 20px;
-            }
-            h1 { font-size: 2em; }
-            .download-btn { padding: 15px 25px; font-size: 1em; }
+        @media(max-width: 600px) {
+            .features { flex-direction: column; }
+            .feature { width: 100%; }
         }
     </style>
 </head>
 
 <body>
+    <header>
+        <h1>TGMStream</h1>
+        <p>Stream Telegram videos smoothly on your Android device</p>
+    </header>
+
     <div class="container">
-        <h1>TGMStream APK</h1>
-        <p>Stream Telegram videos smoothly on your Android device with <b>TGMStream</b>. Fast, easy, and completely free. Enjoy all your Telegram media instantly!</p>
+        <div class="logo">TGM</div>
+        <p>TGMStream lets you enjoy Telegram video streaming easily. Fast, secure, and completely free. Download the latest version now and start streaming!</p>
 
         <a class="download-btn" href="PASTE_YOUR_GOOGLE_DRIVE_DIRECT_LINK_HERE">Download TGMStream APK</a>
 
-        <p class="note">
-            After downloading, enable <b>Install Unknown Apps</b> in your Android settings to install the APK.
-        </p>
+        <div class="features">
+            <div class="feature">
+                <h3>Fast Streaming</h3>
+                <p>Enjoy instant playback of Telegram videos without buffering.</p>
+            </div>
+            <div class="feature">
+                <h3>Easy Navigation</h3>
+                <p>Browse your Telegram media with a simple, intuitive interface.</p>
+            </div>
+            <div class="feature">
+                <h3>Secure & Free</h3>
+                <p>No ads, no cost, and safe installation directly from APK.</p>
+            </div>
+            <div class="feature">
+                <h3>Latest Version</h3>
+                <p>Always updated to support new Telegram features and formats.</p>
+            </div>
+        </div>
+
+        <p class="note">After downloading, enable <b>Install Unknown Apps</b> in your Android settings to install the APK.</p>
     </div>
 
     <footer>
